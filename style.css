@@ -1,0 +1,91 @@
+* {
+  margin: 0;
+  padding: 0;
+  box-sizing: border-box;
+}
+
+html,
+body {
+  width: 100vw;
+  height: 100vh;
+  /* background-image: linear-gradient(to bottom,rgb(112, 9, 215),rgb(163, 90, 236),rgb(42, 7, 77) ); */
+}
+
+main {
+  width: 100%;
+  height: 100%;
+  background-image: linear-gradient(to top, rgba(74, 73, 75, 0.826), rgb(77, 37, 118), rgb(42, 7, 77));
+  display: flex;
+  justify-content: center;
+  align-items: center;
+}
+
+.friendrequest {
+  padding: 2rem;
+  width: 50vw;
+  height: 60vh;
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  flex-direction: column;
+  border: 1px dotted white;
+  position: relative;
+  -webkit-backdrop-filter: blur(10px) saturate(90%);
+          backdrop-filter: blur(10px) saturate(90%);
+  border-radius: 5rem;
+  overflow: hidden;
+  box-shadow: 0 8px 32px 0 rgba(0, 0, 0, 0.37);
+  transition: transform 0.1s ease-out;
+}
+.friendrequest img {
+  width: 90%;
+  padding: 2rem;
+  height: auto;
+  aspect-ratio: 1/1;
+  -o-object-fit: cover;
+     object-fit: cover;
+  -o-object-position: top;
+     object-position: top;
+  border-radius: 5rem;
+  filter: grayscale(0%) brightness(90%);
+  opacity: 0.9;
+}
+.friendrequest h2 {
+  font-size: 2rem;
+  margin-top: -1.5rem;
+  color: rgb(202, 189, 189);
+  text-align: center;
+  text-shadow: 0 0 10px rgba(2, 3, 3, 0.8);
+}
+.friendrequest h3 {
+  font-size: 2rem;
+  color: rgb(202, 189, 189);
+  text-align: center;
+  text-shadow: 0 0 10px rgba(2, 3, 3, 0.8);
+}
+.friendrequest .button {
+  display: flex;
+  justify-content: space-between;
+  align-items: stretch;
+  gap: 6rem;
+  padding: 1rem 1rem;
+}
+.friendrequest .button button {
+  padding: 1rem 1rem;
+  border-radius: 2rem;
+  width: 6rem;
+  border: 1px solid rgb(202, 189, 189);
+  background-color: rgba(0, 0, 0, 0.5);
+  font-size: medium;
+  color: rgb(202, 189, 189);
+  text-align: center;
+  text-shadow: 0 0 10px rgba(2, 3, 3, 0.8);
+  display: flex;
+  align-items: center;
+  justify-content: center;
+  cursor: pointer;
+}
+.friendrequest .button button:hover {
+  background-color: rgb(202, 189, 189);
+  color: rgba(0, 0, 0, 0.5);
+}/*# sourceMappingURL=style.css.map */
