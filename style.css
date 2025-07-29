@@ -85,7 +85,24 @@ main {
   justify-content: center;
   cursor: pointer;
 }
-.friendrequest .button button:hover {
-  background-color: rgb(202, 189, 189);
-  color: rgba(0, 0, 0, 0.5);
+.friendrequest .button #want:hover {
+  background-color: rgba(50, 2, 117, 0.592);
+  color: rgb(249, 250, 250);
+  scale: 1.05;
+}
+.friendrequest .button #want:active {
+  background-color: rgb(255, 255, 255);
+  color: rgb(249, 250, 250);
+  text-shadow: 0 0 0px rgba(234, 246, 246, 0.8);
+  scale: 0.9;
+}
+.friendrequest .button #dontwant:hover {
+  background-color: rgb(204, 86, 86);
+  color: rgba(255, 255, 255, 0.911);
+  scale: 1.05;
+}
+.friendrequest .button #dontwant:active {
+  background-color: #ff0000;
+  color: hsla(0, 0%, 100%, 0.793);
+  scale: 0.9;
 }/*# sourceMappingURL=style.css.map */
