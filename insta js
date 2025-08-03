@@ -1,0 +1,61 @@
+// let window=document.querySelector("main");
+// let cursor= document.querySelector("svg");
+let heart = document.getElementById("heart");
+let heartPath = heart.querySelector("path");
+let like = document.querySelector("i");
+let post = document.getElementsByClassName("post");
+let post_img = document.getElementById("post_img");
+let toggle = 0;
+let beat = 
+// window.addEventListener("mousemove", function (e) {
+//     cursor.style.left = e.pageX + "px";
+//     cursor.style.top = e.pageY + "px";
+// })
+heart.addEventListener("click", function () {
+    if (toggle == 0) {
+        heartPath.setAttribute("fill", "#e63946");
+        heartPath.setAttribute("stroke", "#e63946");
+        toggle = 1;
+    } 
+    else {
+        heartPath.setAttribute("fill", "none");
+        heartPath.setAttribute("stroke", "black");
+        toggle = 0;
+    }
+});
+    post_img.addEventListener("dblclick", function () {
+
+    
+
+
+
+        heartPath.setAttribute("fill", "#e63946");
+        heartPath.setAttribute("stroke", "#e63946");
+        // like.style.transform="translate(-50%, -50%)scale(1)";
+        like.style.animation=`rotate(-45deg) scale(1);
+            }
+            20% {
+                transform: rotate(-45deg) scale(1.1);
+            }
+            40% {
+                transform: rotate(-45deg) scale(1);
+            }
+            60% {
+                transform: rotate(-45deg) scale(1.1);
+            }
+            80% {
+                transform: rotate(-45deg) scale(1);
+            }
+            100% {
+                transform: rotate(-45deg) scale(1);`
+        like.style.opacity="0.7";
+        setTimeout(() => {
+            like.style.opacity="0";
+        }, 1000);
+        setTimeout(() => {
+            like.style.transform="translate(-50%, -50%)scale(0)";
+        }, 2000);
+
+   
+    
+})
