@@ -1,0 +1,74 @@
+*{
+    padding: 0;
+    margin: 0;
+    box-sizing: border-box
+}
+html,body{
+    height: 100%;
+    width: 100%;
+    background-color: rgb(0, 0, 0);
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    color: aliceblue;
+    font-size: 2rem;
+    font-family: 'Gill Sans', 'Gill Sans MT', Calibri, 'Trebuchet MS', sans-serif;
+}
+main{
+    height: 100vh;
+    width: 100vw;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    position: relative;
+    .heart{
+        width: 20px;
+        height: 20px;
+        border-radius: 50%;
+        background-color: #dd4f4f;
+        mix-blend-mode: difference;
+
+        position: absolute;
+        transition: all  linear 0.2
+        
+    }
+    h1{
+        position: absolute;
+        // top: 50%;
+        // left: 50%;
+        // transform: translate(-50%, -50%);
+        font-size: 19vh;
+        font-weight: 900;
+        ;
+
+    }
+}
+
+// .heart {
+//             position: relative;
+//             width: 20px; /* Changed from 100px */
+//             height: 20px; /* Changed from 100px */
+//             background-color: #e63946; /* Heart color */
+//             // transform: rotate(-45deg);
+//             // animation: beat 1.4s linear infinite;
+//         }
+
+        // .heart::before,
+        // .heart::after {
+        //     content: '';
+        //     position: absolute;
+        //     width: 20px; /* Changed from 100px */
+        //     height: 20px; /* Changed from 100px */
+        //     border-radius: 50%;
+        //     background-color: #e63946; /* Must match heart color */
+        // }
+
+        // .heart::before {
+        //     top: -10px; /* Changed from -50px */
+        //     left: 0;
+        // }
+
+        // .heart::after {
+        //     top: 0;
+        //     left: 10px; /* Changed from 50px */
+        // }
